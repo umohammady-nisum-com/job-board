@@ -14,6 +14,6 @@ import { Listing } from './Listing/listing.component'
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [Listing]
 })
 export class AppModule { }

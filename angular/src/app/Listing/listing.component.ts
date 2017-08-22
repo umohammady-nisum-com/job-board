@@ -1,8 +1,9 @@
 import { Component } from '@angular/core'
 
 @Component ({
-	selector: 'app-job-title',
-	template: "<h1>TEST</h1>"
+	selector: 'app-listing',
+	templateUrl: 'listing.component.html',
+	styleUrls: ['./listing.component.css']
 })
 
 
