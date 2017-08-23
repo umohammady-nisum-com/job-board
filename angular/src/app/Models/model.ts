@@ -7,12 +7,13 @@ export class ContactInfo {
 }
 
 export class JobInfo {
-	tile: string;
+	title: string;
 	description: string;
 	qualifications: string;
 	salary: number; 
-	jobType: JobType; 
+	jobType: string; 
 	apply: string;
+	location: string;
 
 }
 
