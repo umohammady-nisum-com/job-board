@@ -17,6 +17,6 @@ import { ListingSidebar } from './ListingSidebar/listingSidebar.component'
 
   ],
   providers: [],
-  bootstrap: [Listing, ListingSidebar]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
