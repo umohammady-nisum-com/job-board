@@ -1,0 +1,15 @@
+{
+
+		"JobInfo":
+		{
+			"title": "Programming Intern", 
+			"description": "This internship is a developing positing at Nisum Technologies. The program is meant for students to be able to develop web applications as well as be able to understand the DevOps process.",
+			"qualifications": "Must be a Computer Science student",
+			"salary": 12,
+			"jobType": "Internship",
+			"apply": "application",
+			"location": "Fremont, CA"
+		}
+}
+
+ 
