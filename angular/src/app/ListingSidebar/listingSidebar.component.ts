@@ -1,8 +1,12 @@
 import { Component, OnInit, Input } from '@angular/core'
 
+<<<<<<< HEAD
 import { JobListing} from '../Models/model';
 import {AppService} from '../../services/app.service';
 
+=======
+import { JobListing } from '../Models/model';
+>>>>>>> 40e063db397d87ed0bd302ba6109ade33facc7d6
 
 @Component ({
 
