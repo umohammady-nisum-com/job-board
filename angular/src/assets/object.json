@@ -1,5 +1,5 @@
-[
-		{
+{
+		"JobListing":{
 			"firstName": "Umair",
 			"lastName": "Mohammady",
 			"email": "umohammady@nisum.com",
@@ -12,6 +12,6 @@
 			"apply": "application",
 			"location": "Fremont, CA"
 		}
-]
+}
 
  

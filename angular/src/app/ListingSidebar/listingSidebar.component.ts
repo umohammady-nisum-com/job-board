@@ -1,12 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core'
 
-<<<<<<< HEAD
 import { JobListing} from '../Models/model';
 import {AppService} from '../../services/app.service';
-
-=======
-import { JobListing } from '../Models/model';
->>>>>>> 40e063db397d87ed0bd302ba6109ade33facc7d6
 
 @Component ({
 
@@ -26,15 +21,6 @@ export class ListingSidebar implements OnInit {
 
 
     ngOnInit(): void{this.getJobListingInfo()}
-
-   /*ngOnInit(): void {
-     //   this.contactInfo = {
-       //     firstName: 'Test',
-         //   lastName: 'Subject',
-           // email: 'smtn@smtn.com',
-            //phone: '1001-1-1-10'
-        //}
-    */}
 
     getJobListingInfo() {
         this.appService.getData()
