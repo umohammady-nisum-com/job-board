@@ -1,12 +1,9 @@
-export class ContactInfo {
-	
+export class JobListing {
+
 	firstName: string;
 	lastName: string;
 	email: string;
 	phone: string;
-}
-
-export class JobInfo {
 	title: string;
 	description: string;
 	qualifications: string;
@@ -17,14 +14,3 @@ export class JobInfo {
 
 }
 
-export class JobType {
-	fullTime = "Full Time";
-	partTime = "Part Time";
-	contract = "Contract";
-	internship = "Internship"
-}
-
-export class JobListing {
-	contact: ContactInfo;
-	information: JobInfo;
-}
