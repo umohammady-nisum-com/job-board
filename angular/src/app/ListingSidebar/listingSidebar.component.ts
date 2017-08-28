@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core'
 
-import {ContactInfo} from '../Models/model';
+import { JobListing } from '../Models/model';
 
 @Component ({
 

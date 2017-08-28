@@ -1,23 +1,23 @@
 
           <div class="blog-post" >
-            <h2 class="blog-post-title">{{jobInfo.JobInfo.title}}</h2>
-            <p class="blog-post-meta">August 22, 2017 by Sameer</p>
-            <p class="blog-post-meta">{{jobInfo.JobInfo.jobType}}, {{jobInfo.JobInfo.location}}</p>
+            <h2 class="blog-post-title">{{jobListing.title}}</h2>
+            <p class="blog-post-meta">August 22, 2017 by {{jobListing.firstName}} {{jobListing.lastName}}</p>
+            <p class="blog-post-meta">{{jobListing.jobType}}, {{jobListing.location}}</p>
 
             <h5>Job Description</h5>
-            <p>{{jobInfo.JobInfo.description}}</p>
+            <p>{{jobListing.description}}</p>
             
             <hr>
             <h5>Salary</h5>
-            <p>{{jobInfo.JobInfo.salary}}/hr</p>
+            <p>{{jobListing.salary}}/hr</p>
             <hr>
             
             <h5>Qualifications</h5>
-            <li>{{jobInfo.JobInfo.qualifications}}</li>
+            <li>{{jobListing.qualifications}}</li>
             <hr>
 
             <h5>Job Type</h5>
-            <p>{{jobInfo.JobInfo.jobType}}</p>
+            <p>{{jobListing.jobType}}</p>
             <hr>
 
 
