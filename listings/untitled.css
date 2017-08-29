@@ -1,4 +1,4 @@
-a/*
+/*
  * Globals
  */
 
@@ -18,7 +18,8 @@ h2, .h2,
 h3, .h3,
 h4, .h4,
 h5, .h5,
-h6, .h6 {
+h6, .h6 
+{
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #333;
@@ -139,9 +140,6 @@ h6, .h6 {
 
 .blog-post {
   margin-bottom: 4rem;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: lighter;
-  color: #333;
 }
 .blog-post-title {
   margin-bottom: .25rem;
@@ -168,9 +166,28 @@ h6, .h6 {
   margin-bottom: 0;
 }
 
+.job-listing
+{
+  text-align: left;
+  padding: 5px 20px 0px;
+  margin: 5px 0px 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+}
+
+.button
+{
+  width: 100%;
+  background-color: #e6f2ff; /* Green */
+
+  margin: 0px 0px 0px;
+  border: 1px solid BLACK;
+}
 
 
-
+button:hover {
+  background: #ffe5f9
+}
 
 .red{
     color:red;
