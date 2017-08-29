@@ -1,27 +1,54 @@
 
-          <div class="blog-post" >
-            <h2 class="blog-post-title">{{jobListing.JobListing.title}}</h2>
-            <p class="blog-post-meta">August 22, 2017 by {{jobListing.JobListing.firstName}} {{jobListing.JobListing.lastName}}</p>
-            <p class="blog-post-meta">{{jobListing.JobListing.jobType}}, {{jobListing.JobListing.location}}</p>
+<div class="container" [routerLink]="['/listing', jobListing.id]" >
 
-            <h5>Job Description</h5>
-            <p>{{jobListing.JobListing.description}}</p>
-            
-            <hr>
-            <h5>Salary</h5>
-            <p>{{jobListing.JobListing.salary}}/hr</p>
-            <hr>
-            
-            <h5>Qualifications</h5>
-            <li>{{jobListing.JobListing.qualifications}}</li>
-            <hr>
-
-            <h5>Job Type</h5>
-            <p>{{jobListing.JobListing.jobType}}</p>
-            <hr>
+    <div class="row">
 
 
-            
-          </div><!-- /.blog-post -->
+        <div class="col-sm-8 blog-main">
+
+
+              <div class="blog-post" *ngIf="jobListing && jobListing.length > 0" >
+                <h2 class="blog-post-title">{{jobListing.title}}</h2>
+                <p class="blog-post-meta">August 22, 2017 by {{jobListing.firstName}} {{jobListing.lastName}}</p>
+                <p class="blog-post-meta">{{jobListing.jobType}}, {{jobListing.location}}</p>
+
+                <h5>Job Description</h5>
+                <p>{{jobListing.description}}</p>
+                
+                <hr>
+                <h5>Salary</h5>
+                <p>{{jobListing.salary}}/hr</p>
+                <hr>
+                
+                <h5>Qualifications</h5>
+                <li>{{jobListing.qualifications}}</li>
+                <hr>
+
+                <h5>Job Type</h5>
+                <p>{{jobListing.jobType}}</p>
+                <hr>
+
+
+                
+              </div><!-- /.blog-post -->
+
+        </div><!-- /.blog-main -->
+
+
+        <div class="col-sm-4 blog-sidebar">
+
+            <div class="sidebar-module sidebar-module-inset" *ngIf="jobListing && jobListing.length > 0" >
+                <h5>How To Apply</h5>
+                <p>Email,Phone, or <a href="#">link</a></p>
+                <h5>Contact Info</h5>
+                <p>Email: {{jobListing.email}}</p>
+                <p>Phone: {{jobListing.phone}}</p>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
 
 

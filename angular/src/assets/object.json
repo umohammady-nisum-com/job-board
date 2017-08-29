@@ -1,5 +1,6 @@
-{
-		"JobListing":{
+[
+		{
+			"id": 1,
 			"firstName": "Umair",
 			"lastName": "Mohammady",
 			"email": "umohammady@nisum.com",
@@ -11,7 +12,7 @@
 			"jobType": "Internship",
 			"apply": "application",
 			"location": "Fremont, CA"
-		}
-}
+		}		
+]
 
  

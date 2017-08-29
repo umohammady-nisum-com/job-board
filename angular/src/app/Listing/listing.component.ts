@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core'
 
-import { JobListing} from '../Models/model';
-import {AppService} from '../../services/app.service';
+import { JobListing } from '../Models/model';
+import { AppService } from '../../services/app.service';
 
 
 
@@ -9,7 +9,6 @@ import {AppService} from '../../services/app.service';
 @Component ({
 
 	moduleId: module.id,
-	selector: 'app-listing',
 	templateUrl: 'listing.component.html',
 	styleUrls: ['./listing.component.css']
 })
@@ -17,14 +16,14 @@ import {AppService} from '../../services/app.service';
 
 export class Listing implements OnInit {
 
-	@Input() jobListing: JobListing[] = [];
+	@Input() jobListing: JobListing;
 
 	constructor(private appService: AppService) {}
 
 	ngOnInit(): void{this.getJobInfo()}
 
 	getJobInfo() {
-		this.appService.getData()
+		this.appService.getData(1)
 		.subscribe(
 			info => this.jobListing = info,
 			error => console.log(error)
