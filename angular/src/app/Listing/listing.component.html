@@ -1,5 +1,5 @@
 
-<div class="container" [routerLink]="['/listing', jobListing.id]" >
+<div class="container" >
 
     <div class="row">
 
@@ -7,7 +7,7 @@
         <div class="col-sm-8 blog-main">
 
 
-              <div class="blog-post" *ngIf="jobListing && jobListing.length > 0" >
+              <div class="blog-post" *ngIf="jobListing && jobListing.length > 0" [routerLink]="['/listing', jobListing.id]" >
                 <h2 class="blog-post-title">{{jobListing.title}}</h2>
                 <p class="blog-post-meta">August 22, 2017 by {{jobListing.firstName}} {{jobListing.lastName}}</p>
                 <p class="blog-post-meta">{{jobListing.jobType}}, {{jobListing.location}}</p>

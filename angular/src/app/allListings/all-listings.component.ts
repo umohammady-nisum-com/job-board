@@ -6,8 +6,9 @@ import { JobListing } from '../Models/model';
 
 
 @Component ({
-	selector: 'all-listings',
-	template: '<p>testing</p>'
+	templateUrl: 'all-listings.component.html',
+	styleUrls: ['all-listings.component.css']
+
 })
 
 export class AllListings {
@@ -17,7 +18,7 @@ export class AllListings {
 
 	constructor(private appService: AppService) {}
 
-	/*ngOnInit() {this.getAllListings()}
+	ngOnInit() {this.getAllListings()}
 
 	getAllListings(){
 		this.appService.getAllData()
@@ -25,7 +26,7 @@ export class AllListings {
 			info => this.jobListings = info,
 			error => console.log(error)
 			);
-	}*/
+	}
 	
 
 }

@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core'
 
 import { JobListing } from '../Models/model';
 import { AppService } from '../../services/app.service';
+import 	{ ActivatedRoute  } from '@angular/router';
 
 
 
@@ -16,16 +17,17 @@ import { AppService } from '../../services/app.service';
 
 export class Listing implements OnInit {
 
-	@Input() jobListing: JobListing;
+	@Input() jobListing: JobListing  = null;
 
-	constructor(private appService: AppService) {}
+	constructor(private appService: AppService,
+				private route: ActivatedRoute) {}
 
 	ngOnInit(): void{this.getJobInfo()}
 
 	getJobInfo() {
-		this.appService.getData(1)
-		.subscribe(
-			info => this.jobListing = info,
+
+		this.appService.getData(1).subscribe(
+			(info: JobListing) => this.jobListing = info,
 			error => console.log(error)
 			);
 	}
