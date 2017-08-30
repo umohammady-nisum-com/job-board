@@ -7,6 +7,11 @@ import { HttpModule } from '@angular/http'
 
 import { Listing } from './listing/listing.component'
 import { AllListings } from './allListings/all-listings.component'
+import { NewListing } from './newListing/newListing.component'
+
+import { NavBar } from './navbar/navbar.component'
+
+
 
 import { AppService } from '../services/app.service'
 
@@ -17,7 +22,9 @@ import { appRoutes } from './routes'
   declarations: [
     AppComponent,
     Listing,
-    AllListings
+    AllListings,
+    NewListing,
+    NavBar
   ],
   imports: [
     BrowserModule,
