@@ -7,30 +7,29 @@
         <div class="col-sm-8 blog-main">
 
 
-              <div class="blog-post" *ngIf="jobListing && jobListing.length > 0" >
-                <h2 class="blog-post-title">{{jobListing[0].title}}</h2>
+            <div class="blog-post" *ngIf="jobListing && jobListing.length > 0" >
+                <h2>{{jobListing[0].title}}</h2>
                 <p class="blog-post-meta">August 22, 2017 by {{jobListing[0].firstName}} {{jobListing[0].lastName}}</p>
                 <p class="blog-post-meta">{{jobListing[0].jobType}}, {{jobListing[0].location}}</p>
 
-                <h5>Job Description</h5>
+                <h4>Job Description</h4>
                 <p>{{jobListing[0].description}}</p>
                 
                 <hr>
-                <h5>Salary</h5>
+                <h4>Salary</h4>
                 <p>{{jobListing[0].salary}}/hr</p>
                 <hr>
                 
-                <h5>Qualifications</h5>
+                <h4>Qualifications</h4>
                 <li>{{jobListing[0].qualifications}}</li>
                 <hr>
 
-                <h5>Job Type</h5>
+                <h4>Job Type</h4>
                 <p>{{jobListing[0].jobType}}</p>
                 <hr>
 
-
                 
-              </div><!-- /.blog-post -->
+            </div><!-- /.blog-post -->
 
         </div><!-- /.blog-main -->
 
