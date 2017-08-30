@@ -10,9 +10,9 @@ import { AllListings } from './allListings/all-listings.component'
 import { NewListing } from './newListing/newListing.component'
 
 import { NavBar } from './navbar/navbar.component'
+import { Error404Component } from './errors/404.component'
 
-
-
+import { DataRouteActivator } from '../services/route-activator.service'
 import { AppService } from '../services/app.service'
 
 import { appRoutes } from './routes'
@@ -24,7 +24,8 @@ import { appRoutes } from './routes'
     Listing,
     AllListings,
     NewListing,
-    NavBar
+    NavBar,
+    Error404Component
   ],
   imports: [
     BrowserModule,
@@ -32,7 +33,7 @@ import { appRoutes } from './routes'
     RouterModule.forRoot(appRoutes),
 
   ],
-  providers: [AppService],
+  providers: [AppService, DataRouteActivator],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
