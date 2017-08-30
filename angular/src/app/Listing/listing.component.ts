@@ -17,7 +17,7 @@ import 	{ ActivatedRoute  } from '@angular/router';
 
 export class Listing implements OnInit {
 
-	@Input() jobListing: JobListing  = null;
+	@Input() jobListing: JobListing;
 
 	constructor(private appService: AppService,
 				private route: ActivatedRoute) {}
@@ -26,7 +26,7 @@ export class Listing implements OnInit {
 
 	getJobInfo() {
 
-		this.appService.getData(1).subscribe(
+		this.appService.getData(2).subscribe(
 			(info: JobListing) => this.jobListing = info,
 			error => console.log(error)
 			);

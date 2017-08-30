@@ -7,25 +7,25 @@
         <div class="col-sm-8 blog-main">
 
 
-              <div class="blog-post" *ngIf="jobListing && jobListing.length > 0" [routerLink]="['/listing', jobListing.id]" >
-                <h2 class="blog-post-title">{{jobListing.title}}</h2>
-                <p class="blog-post-meta">August 22, 2017 by {{jobListing.firstName}} {{jobListing.lastName}}</p>
-                <p class="blog-post-meta">{{jobListing.jobType}}, {{jobListing.location}}</p>
+              <div class="blog-post" *ngIf="jobListing && jobListing.length > 0" >
+                <h2 class="blog-post-title">{{jobListing[0].title}}</h2>
+                <p class="blog-post-meta">August 22, 2017 by {{jobListing[0].firstName}} {{jobListing[0].lastName}}</p>
+                <p class="blog-post-meta">{{jobListing[0].jobType}}, {{jobListing[0].location}}</p>
 
                 <h5>Job Description</h5>
-                <p>{{jobListing.description}}</p>
+                <p>{{jobListing[0].description}}</p>
                 
                 <hr>
                 <h5>Salary</h5>
-                <p>{{jobListing.salary}}/hr</p>
+                <p>{{jobListing[0].salary}}/hr</p>
                 <hr>
                 
                 <h5>Qualifications</h5>
-                <li>{{jobListing.qualifications}}</li>
+                <li>{{jobListing[0].qualifications}}</li>
                 <hr>
 
                 <h5>Job Type</h5>
-                <p>{{jobListing.jobType}}</p>
+                <p>{{jobListing[0].jobType}}</p>
                 <hr>
 
 
@@ -41,8 +41,8 @@
                 <h5>How To Apply</h5>
                 <p>Email,Phone, or <a href="#">link</a></p>
                 <h5>Contact Info</h5>
-                <p>Email: {{jobListing.email}}</p>
-                <p>Phone: {{jobListing.phone}}</p>
+                <p>Email: {{jobListing[0].email}}</p>
+                <p>Phone: {{jobListing[0].phone}}</p>
 
             </div>
 

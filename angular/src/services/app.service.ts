@@ -18,21 +18,16 @@ export class AppService {
 
 	getAllData(): Observable<JobListing[]> {
 		return this.http
-			.get('/assets/object.json')
+			.get('/assets/object')
             .map((response: Response) => <JobListing[]>response.json());
 	}
 
-	getData(id:number): Observable<JobListing> {
-		let headers = new Headers({ 'Content-Type': 'object/json' });
-        let options = new RequestOptions({
-            headers: headers,
-            // Have to make a URLSearchParams with a query string
-            search: new URLSearchParams('id=1')
-        });
-	
+	getData(id: number): Observable<JobListing> {
+
 		return this.http 
-		.get('/assets/object.json/', options)
-        .map((response: Response) => <JobListing>response.json());
+		.get('/assets/object/')
+        .map(res => res.json()
+                            .filter(<JobListing>(filter) => filter.id === id));
 	}
 
 }
