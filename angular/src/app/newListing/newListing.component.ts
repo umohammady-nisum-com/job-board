@@ -22,7 +22,6 @@ export class NewListing implements OnInit {
 	ngOnInit(){
 
 	this.jobListing = {
-		id: 3,
 		firstName: '',
 		lastName: '',
 		email: '',

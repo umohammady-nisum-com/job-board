@@ -1,6 +1,5 @@
 export class JobListing {
 
-	id: number;
 	firstName: string;
 	lastName: string;
 	email: string;

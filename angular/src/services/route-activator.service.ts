@@ -9,7 +9,7 @@ export class DataRouteActivator implements CanActivate {
 				private router: Router){}
 
 	canActivate(route:ActivatedRouteSnapshot){
-		const dataExists = !!this.appService.getData(+route.params['id'])
+		const dataExists = !!this.appService.getData(route.params['id'])
 
 		if (!dataExists){
 			this.router.navigate['404']

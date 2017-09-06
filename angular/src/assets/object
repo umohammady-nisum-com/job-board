@@ -1,6 +1,4 @@
-{	
-	"listings":
-	[
+[
 		{
 			"id": 1,
 			"firstName": "Umair",
@@ -29,6 +27,4 @@
 			"apply": "Apply with email, phone or google",
 			"location": "Fremont, CA"
 		}			
-	]
-}
- 
+]

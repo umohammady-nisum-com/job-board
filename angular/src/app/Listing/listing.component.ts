@@ -26,10 +26,11 @@ export class Listing implements OnInit {
 
 	getJobInfo() {
 
-		this.appService.getData(+this.route.snapshot.params['id']).subscribe(
-			(info: JobListing) => this.jobListing = info,
+		this.appService.getData(this.route.snapshot.params['id']).subscribe(
+			(info: JobListing) => { this.jobListing = info },
 			error => console.log(error)
 			);
+
 	}
 
 }
