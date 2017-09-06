@@ -3,6 +3,8 @@ import { Router }	from '@angular/router'
 
 import { JobListing } from '../Models/model' 
 
+import { AppService } from '../../services/app.service'
+
 
 @Component ({
 	templateUrl: 'newListing.component.html',
@@ -14,7 +16,8 @@ export class NewListing implements OnInit {
 
 	jobListing: JobListing 
 
-	constructor(private router: Router){}
+	constructor(private router: Router,
+				private appService: AppService){}
 
 	ngOnInit(){
 
@@ -41,7 +44,7 @@ export class NewListing implements OnInit {
 	}
 
 	onSubmit(){
-		
+		this.appService.saveData(this.jobListing)
 	}
 
 }

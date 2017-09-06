@@ -30,11 +30,15 @@ export class AppService {
                             .filter(<JobListing>(filter) => filter.id === id));
 	}
 
-	putData( jobListing: JobListing){
+	saveData( jobListing: JobListing){
+		let headers = new Headers({'Content-Type': 'application/json'})
+		let options = new RequestOptions({headers: headers})
+
 		this.http.post('/assets/object/', 
-			JSON.stringify(jobListing)).subscribe(
-            data => console.log('Data call response' + data),
-            error => console.log('Data call error' + error)
+			JSON.stringify(jobListing),
+			options).subscribe(
+            	data => console.log('Data call response' + data),
+         	   error => console.log('Data call error' + error)
             )
 	}
 
