@@ -36,9 +36,9 @@
 
         <div class="col-sm-4 blog-sidebar">
 
-            <div class="sidebar-module sidebar-module-inset" *ngIf="jobListing && jobListing.length > 0" >
+            <div class="sidebar-module sidebar-module-inset" *ngIf="jobListing" >
                 <h5>How To Apply</h5>
-                <p>Email,Phone, or <a href="#">link</a></p>
+                <p>{{jobListing.apply}}</p>
                 <h5>Contact Info</h5>
                 <p>Email: {{jobListing.email}}</p>
                 <p>Phone: {{jobListing.phone}}</p>
