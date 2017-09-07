@@ -9,7 +9,6 @@
   max-width: 60rem;
 }
 
-
 /*
  * Main column and sidebar layout
  */
@@ -17,22 +16,11 @@
 /* Sidebar modules for boxing content */
 .sidebar-module {
   padding: 1rem;
-  /*margin: 0 -1rem 1rem;*/
 }
-
-
-/* Pagination */
-.blog-pagination {
-  margin-bottom: 4rem;
-}
-.blog-pagination > .btn {
-  border-radius: 2rem;
-}
-
 
 .blog-post {
   margin-bottom: 4rem;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: lighter;
 }
 .blog-post-title {
@@ -44,7 +32,6 @@
   color: #999;
 
 }
-
 
 .sidebar-module-inset {
   padding: 1rem;
