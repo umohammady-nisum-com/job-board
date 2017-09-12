@@ -29,6 +29,7 @@ export class NewListing implements OnInit {
 		title: '',
 		description: '',
 		qualifications: '',
+		company: '',
 		salary: null,
 		jobType: '',
 		apply: '',

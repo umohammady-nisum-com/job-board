@@ -7,6 +7,7 @@ export class JobListing {
 	title: string;
 	description: string;
 	qualifications: string;
+	company: string;
 	salary: number; 
 	jobType: string; 
 	apply: string;

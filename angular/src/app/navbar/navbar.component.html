@@ -19,12 +19,17 @@
 
         <form class="navbar-form navbar-right" role="search">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search" />
+            <input type="text" class="form-control" id="search" name="search" placeholder="Search" />
           </div>
-          <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-search"  aria-hidden="true"></span></button>
+
+
+          <button  class="btn btn-danger" ><span class="glyphicon glyphicon-search"  aria-hidden="true"></span></button>
         </form>
       </div>
-</nav><!-- /.navbar -->
+</nav><!-- /.navbar (ngSubmit)="onSubmit()" type="submit"
+ [(ngModel)]="searchString"
+                                     #searchString="ngModel" 
+                                      -->
 
 
 
