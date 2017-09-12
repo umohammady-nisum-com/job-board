@@ -11,6 +11,7 @@ import { AllListings } from './allListings/all-listings.component'
 import { NewListing } from './newListing/newListing.component'
 
 import { NavBar } from './navbar/navbar.component'
+import { Footer } from './Footer/footer.component'
 import { Error404Component } from './errors/404.component'
 
 import { DataRouteActivator } from '../services/route-activator.service'
@@ -26,6 +27,7 @@ import { appRoutes } from './routes'
     AllListings,
     NewListing,
     NavBar,
+    Footer,
     Error404Component
   ],
   imports: [
