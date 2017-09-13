@@ -8,6 +8,17 @@ Description:
 
 - This app makes use of some modern software and frameworks such as Node.js, Express.js, Angular 2, and MongoDB. To get started working with this app, the following needs to be done:
 
-Prerequisites: 
-  - Node.js installed on system
-  - MongoDB installed on system
+# Technologies Used
+  - Node.js
+  - MongoDB 
+  - Angular 2
+  - Bootstreap
+  - Jenkins 2
+  
+# Unfinished Features
+  - Search
+  - Multiple Pages for All Listings
+  - Edit / Delete
+  - AWS / Heroku
+  - Submit Button Handles
+  
