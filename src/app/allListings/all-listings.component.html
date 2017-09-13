@@ -1,0 +1,27 @@
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-8">
+
+
+            <h2>Job Offers</h2>
+            <hr>
+            <button [routerLink]="['../listing/', listing._id]" class="button" *ngFor="let listing of jobListings">
+                <div class="job-listing">
+                    <h4>{{listing.title}}</h4>
+                    <div align="left">Nisum</div> 
+                    <div align="left">{{listing.location}}</div>
+                    <div align="right">Posted: Yesterday </div>
+                </div>
+            </button>
+            <br>
+            <br>
+            <br>
+            </div>
+
+        </div>
+
+    </div>
+
+
