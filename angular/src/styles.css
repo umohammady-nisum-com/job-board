@@ -11,7 +11,8 @@
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #555;
-
+   min-height:100%;
+   position:relative;
 }
 
 h1, .h1,
@@ -25,13 +26,3 @@ h6, .h6 {
   color: #333;
 }
 
-.blog-footer {
-  padding: 1rem 0;
-  color: #999;
-  text-align: center;
-  background-color: #f7f7f7;
-  border-top: .05rem solid #e5e5e5;
-}
-.blog-footer p:last-child {
-  margin-bottom: 0;
-}

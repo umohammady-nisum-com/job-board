@@ -76,31 +76,33 @@
                         type="text" class="form-control" id="salary" name="salary" placeholder="Salary" required>
                     </div>
 
-                    <div class="form-group">
-                    <input [(ngModel)]="jobListing.apply"
-                                     required
-                                     #apply="ngModel" 
-                                     name="apply" class="form-control" type="textarea" id="apply" placeholder="How to Apply" cols = 25 rows="10">
-                  
-                    </div>
 
-                    <div class="form-group">
-                    <input [(ngModel)]="jobListing.description"
-                                     required
-                                     #description="ngModel"
+                     <textarea class="input" [(ngModel)]="jobListing.qualifications"
+                                    required
+                                    #qualifications="ngModel"
+                    class="form-group"
+                    name="qualifications" class="form-control" id="Qualification" placeholder="Qualifications" cols=50 rows=5>
+                        
+                    </textarea>
+                    <br>
+                    
+                    <textarea class="input" [(ngModel)]="jobListing.apply"
+                                    required
+                                    #apply="ngModel"
+                    class="form-group"
+                    name="apply" class="form-control" id="apply" placeholder="How to Apply" cols=50 rows=5>
+                        
+                    </textarea>
 
-                    name="description" class="form-control" type="textarea" id="description" placeholder="Job Description"  cols = 50 rows="15">
-                   
-                    </div>
+                    <br>
+                    <textarea class="input" [(ngModel)]="jobListing.description"
+                                    required
+                                    #description="ngModel"
+                    class="form-group"
+                    name="description" class="form-control" id="description" placeholder="Job Description" cols=50 rows=8>
+                        
+                    </textarea>
 
-                    <div class="form-group">
-                    <input [(ngModel)]="jobListing.qualifications"
-                                     required
-                                     #qualifications="ngModel"
-
-                     name="qualifications" class="form-control" type="textarea" id="Qualification" placeholder="Qualifications" cols = 50 rows="15">
-                   
-                    </div>
                     
                     <div class="row">
 	        		     <button type="submit" id="submit" name="submit" class="btn btn-primary">Submit</button>
