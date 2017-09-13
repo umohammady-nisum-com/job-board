@@ -1,4 +1,6 @@
 #!/bin/bash
-
+cd angular
+npm start &
+cd ..
 cd rest-api-server
 node server.js 
