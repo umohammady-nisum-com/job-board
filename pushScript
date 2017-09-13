@@ -1,5 +1,5 @@
 #!/bin/bash
-str="'$*'"
+str="$*"
 git add *
 git commit -m "$str"
 git pull
