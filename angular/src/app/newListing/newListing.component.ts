@@ -15,10 +15,9 @@ import { AppService } from '../../services/app.service'
 export class NewListing implements OnInit {
 
 	jobListing: JobListing 
-
+	displayDate = new Date().toLocaleDateString();
 	constructor(private router: Router,
 				private appService: AppService){}
-
 	ngOnInit(){
 
 	this.jobListing = {
@@ -33,8 +32,8 @@ export class NewListing implements OnInit {
 		salary: null,
 		jobType: '',
 		apply: '',
+		dates: this.displayDate,
 		location: ''
-
 		}
 	}
 
@@ -45,6 +44,7 @@ export class NewListing implements OnInit {
 
 	onSubmit(){
 		this.appService.saveData(this.jobListing)
+		this.router.navigate(['allListings'])
 	}
 
 }

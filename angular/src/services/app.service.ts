@@ -37,7 +37,6 @@ export class AppService {
 	saveData( jobListing: JobListing){
 		let headers = new Headers({'Content-Type': 'application/json'})
 		let options = new RequestOptions({headers: headers})
-
 		this.http.post(this.url + 'api/listings/', 
 			JSON.stringify(jobListing),
 			options).subscribe(

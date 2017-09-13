@@ -25,7 +25,7 @@ export class AllListings {
 	getAllListings(){
 		this.appService.getAllData()
 		.subscribe(
-			info => this.jobListings = info,
+			(info) => { this.jobListings = info; console.log(this.jobListings); },
 			error => console.log(error)
 			);
 	}

@@ -12,11 +12,9 @@ var listingSchema = new mongoose.Schema({
 	title: String,
 	description: String,
 	qualifications: String,
-	company: String,
 	salary: Number,
 	jobType: String,
 	apply: String,
-	dates: String,
 	location: String
 
 });

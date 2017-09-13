@@ -11,7 +11,7 @@ export class JobListing {
 	salary: number; 
 	jobType: string; 
 	apply: string;
+	dates: string;
 	location: string;
-
 }
 
