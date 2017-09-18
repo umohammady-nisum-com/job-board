@@ -22,4 +22,4 @@ This is the Nisum intern project.
   - Edit / Delete Postings
   - Submit Button Handles
   - Job Confirmation Post
-  
+  - Job Status 
