@@ -20,6 +20,5 @@ This is the Nisum intern project.
   - Search Postings
   - Multiple Pages for All Listings
   - Edit / Delete Postings
-  - Submit Button Handles
   - Job Confirmation Post
   - Job Status 
