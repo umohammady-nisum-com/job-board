@@ -4,15 +4,16 @@
     	<div class="form-area">  
         	
 
-            <form (ngSubmit)="onSubmit()" role="form">
+            <form name="newListingForm" (ngSubmit)="onSubmit()" role="form" validate>
         		<br style="clear:both">
                     <h3 style="margin-bottom: 50px; ">New Job Listing</h3>
-    				<div class="form-group">
+    				
+                    <div class="form-group">
 						<input [(ngModel)]="jobListing.firstName"
                                      required
                                      #firstName="ngModel"
-
                         type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
+
 					</div>
 
                     <div class="form-group">
@@ -26,8 +27,9 @@
 						<input [(ngModel)]="jobListing.email"
                                      required
                                      #email="ngModel"
-
-                         type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+                        
+                        type="text" pattern="email" class="form-control" id="email" name="email" placeholder="Email"
+                        required>
 					</div>
 					<div class="form-group">
 						<input [(ngModel)]="jobListing.phone"
@@ -73,7 +75,7 @@
                                      required
                                      #salary="ngModel"
 
-                        type="text" class="form-control" id="salary" name="salary" placeholder="Salary" required>
+                        type="Number" class="form-control" id="salary" name="salary" placeholder="Hourly Salary (Enter Digits Only)" required>
                     </div>
 
 
@@ -106,7 +108,7 @@
                     
                     <div class="row">
 	        		     <button type="submit" id="submit" name="submit" class="btn btn-primary">Submit</button>
-                         <button type="button" id="cancel" name="cancel" class="btn btn-primary" (click)="cancel()">Cancel</button>
+                         <button type="button" id="cancel" name="cancel" class="btn btn-primary"(click)="cancel()">Cancel</button>
                     </div>
 	       </form>
     	</div>
