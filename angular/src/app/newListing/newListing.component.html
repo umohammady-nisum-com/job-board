@@ -4,7 +4,7 @@
     	<div class="form-area">  
         	
 
-            <form name="newListingForm" (ngSubmit)="onSubmit()" role="form" validate>
+            <form name="newListingForm" (ngSubmit)="onSubmit()" role="form">
         		<br style="clear:both">
                     <h3 style="margin-bottom: 50px; ">New Job Listing</h3>
     				
@@ -28,7 +28,7 @@
                                      required
                                      #email="ngModel"
                         
-                        type="text" pattern="email" class="form-control" id="email" name="email" placeholder="Email"
+                        type="text" pattern="text" class="form-control" id="email" name="email" placeholder="Email"
                         required>
 					</div>
 					<div class="form-group">
